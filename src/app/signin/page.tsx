@@ -2,6 +2,7 @@ import Image from 'next/image'
 import logo from '../assets/noob.png'
 import '../components/input'
 import { Input } from '../components/input'
+import {Button}  from '../components/button'
 
 // https://blog.rocketseat.com.br/react-diferenca-entre-named-e-default-exports/
 export default function Signup() {
@@ -24,20 +25,19 @@ export default function Signup() {
                         width={100} 
                         height={100} 
                     />
-                    <h2 className='text-2xl my-10 font-medium'>Cadastre-se no Champions Tracker</h2>
+                    <h2 className='text-2xl my-10 font-medium'>Logar no Champions Tracker</h2>
 
                     <form action="" method="get" className='flex flex-col gap-2 items-center'>
-                        <Input placeholder='Nome de usuário'/>                        
                         <Input placeholder='Email' type='email'/>                        
-                        <Input placeholder='Senha' type='password'/>                        
-                        <Input placeholder='Confirme sua senha' type='password'/>     
+                        <Input placeholder='Senha' type='password'/>                 
 
                         <span className='w-full mt-7'>
                             <input className='mr-2' type='checkbox'/>
-                            <label htmlFor="" className='text-xs'>Li e concordo com os termos de uso</label>
+                            <label htmlFor="" className='text-xs'>Lembrar minha senha</label>
                         </span>
 
-                        <button className="bg-primary mt-10 font-medium px-4 py-3 rounded-[5px] hover:bg-primary-light">CRIAR CONTA</button>                   
+                        <Button label='LOGIN' color='accent'/>
+                        {/* <button className="bg-primary mt-10 font-medium px-4 py-3 rounded-[5px] hover:bg-primary-light">LOGAR</button>                    */}
                     </form>
 
                     
